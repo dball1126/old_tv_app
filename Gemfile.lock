@@ -242,7 +242,7 @@ GEM
     mimemagic (0.3.2)
     mini_magick (4.5.1)
     mini_portile2 (2.2.0)
-    minitest (5.10.2)
+    minitest (5.10.1)
     minitest-reporters (1.1.9)
       ansi
       builder
@@ -294,7 +294,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (12.0.0)
-    rb-fsevent (0.10.1)
+    rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rbvmomi (1.11.3)
@@ -365,7 +365,7 @@ DEPENDENCIES
   jquery-rails (= 4.1.1)
   listen (= 3.0.8)
   mini_magick (= 4.5.1)
-  minitest
+  minitest (~> 5.10, != 5.10.2)
   minitest-reporters (= 1.1.9)
   pg (= 0.18.4)
   puma (= 3.4.0)
