@@ -1,0 +1,43 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal  */
+
+body {
+  background: #E0FFFF; 
+  padding-top: 60px;
+}
+
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  background-color: #E0FFFF;
+}
+
+.center h2 {
+  margin-top: -30px;
+  background-color: #E0FFFF;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+}
+
+.center h1  {
+  margin-bottom: 10px;
+  background-color: #E0FFFF;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 95px;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    background-color: #E0FFFF;
+}

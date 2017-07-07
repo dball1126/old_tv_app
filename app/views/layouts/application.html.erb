@@ -6,9 +6,26 @@
     <%= stylesheet_link_tag    'application', media: 'all',
                                               'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+    <![endif]-->    
   </head>
-
   <body>
-    <%= yield %>
+    <header class="navbar navbar-fixed-top navbbar-inverse">
+      <div class="container">
+        <%= link_to "tv app", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", 'static_pages/home' %></li>
+            <li><%= link_to "About", 'static_pages/about' %></li>
+            <li><%= link_to "Contact", 'static_pages/contact' %></li>
+          </ul>
+        </nav>
+        </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
