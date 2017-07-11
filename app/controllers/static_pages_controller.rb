@@ -4,4 +4,10 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+  
+  def bit_rate
+  end
+  
+  def file_size
+  end
 end
