@@ -35,4 +35,17 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "File size | #{@base_title}"
   end
+  
+  test "should get what is 4k" do
+    get what_is_4k_path
+    assert_response :success
+    assert_select "title", "What is 4K | #{@base_title}"
+  end
+  
+  test "should get hdr" do
+    get hdr_path
+    assert_response :success
+    assert_select "title", "HDR | #{@base_title}"
+  end
+  
 end

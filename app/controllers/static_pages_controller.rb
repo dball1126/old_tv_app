@@ -1,4 +1,6 @@
 class StaticPagesController < ApplicationController
+  #before_filter :check_for_mobile
+  
   def home
   end
 
@@ -9,5 +11,11 @@ class StaticPagesController < ApplicationController
   end
   
   def file_size
+  end
+  
+  def what_is_4k
+  end
+  
+  def hdr
   end
 end
