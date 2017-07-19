@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get '/file_size', to: 'static_pages#file_size'
   get '/what_is_4k', to: 'static_pages#what_is_4k'
   get '/hdr',        to: 'static_pages#hdr'
+  get '/i_vs_p', to: 'static_pages#interlaced_vs_progressive'
   
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

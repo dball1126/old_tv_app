@@ -48,4 +48,9 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "HDR | #{@base_title}"
   end
   
+  test "should get interlaced vs progressive" do
+    get i_vs_p_path
+    assert_response :success
+    assert_select "title", "Interlaced vs Progressive | #{@base_title}"
+  end
 end
