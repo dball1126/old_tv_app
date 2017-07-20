@@ -1,7 +1,7 @@
 <div class ="center jumbotron">
   <div>
   <h1>
-  <%= link_to image_tag("logoforsite.jpg", alt: "4K Logo", :size => "260x180"), 'https://rails-tutorial-dball1126.c9users.io/' %>
+  <%= link_to image_tag("logoforsite.jpg", alt: "4K Logo", :size => "260x180"), 'https://www.about4ktv.com' %>
   </h1>
 </div>
 <div>
@@ -15,14 +15,16 @@
   scanning. Generally Progressive scanning will produce a better picture and is recommended over Interlaced scanning.
   The numbers 480, 720, and 1080 are referring to the scan lines of resolution, this generally means the higher the 
   number the higher the resolution.  Older CRT TV's and a picture considered standard definition is normally 480P/i or
-  lower, and it normally has an aspect ratio of 4:3(square picture just like the older TV's). A TV(480) can have 
-  640(width) x 480(length) pixels on a screen with an aspect ratio of 4:3((480/3) * 4, (480/3) * 3), but a TV(480) with
-  an aspect ratio of 16:9, can have around 854 X 480 pixels in the screen resolution.
+  lower, and it normally has an aspect ratio of 4:3(square picture just like the older TV's). A TV(480P) can have 
+  640(width) x 480(length) pixels on a screen with an aspect ratio of 4:3((480/3) * 4, (480/3) * 3), but a TV(480p) with
+  an aspect ratio of 16:9, can have around 854 X 480 pixels in screen resolution. A TV(480i) has the same amount of pixels
+  as 480p, but it uses Interlaced scanning and the picture is not the same. Look at this <%= link_to "pixel chart",
+  pixel_chart_path %> for a complete breakdown in pixel difference between the different display resolutions.
   
-  Now we can talk about 720, 1080 and 2160(4K).  The newer TV's are wider and have an aspect ratio of 16:9, which means the
-  amount of pixels a TV outputs in 720 would be ((720/9)*16, (720/9) * 9), which = 1280 x 720, and a TV/device that ouputs
-  resolution at 1080, would have 1920 x 1080 pixels, and a TV/device that can output video at 4K(2160) would have 
-  3840 x 2160 pixels.
+  Now we can talk about 720p, 1080p and 2160p(4K).  The newer TV's are wider and have an aspect ratio of 16:9, which means
+  the amount of pixels a TV outputs in 720 would be ((720/9)*16, (720/9) * 9), which = 1280 x 720, and a TV/device that
+  ouputs resolution at 1080p, would have 1920 x 1080 pixels, and a TV/device that can output video at 4K(2160) would have 
+  3840 x 2160 pixels. 
    </p>
    
    <h2>What is HDR?</h2>

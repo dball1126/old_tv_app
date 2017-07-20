@@ -33,7 +33,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get file size" do
     get file_size_path
     assert_response :success
-    assert_select "title", "File size | #{@base_title}"
+    assert_select "title", "4K File size | #{@base_title}"
   end
   
   test "should get what is 4k" do
@@ -53,4 +53,35 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Interlaced vs Progressive | #{@base_title}"
   end
+  
+  test "should get pixel chart" do
+    get pixel_chart_path
+    assert_response :success
+    assert_select "title", "Pixel chart | #{@base_title}"
+  end
+  
+  test "should get shortcuts" do
+    get shortcuts_path
+    assert_response :success
+    assert_select "title", "Shortcuts | #{@base_title}"
+  end
+  
+  test "should get ultra hd" do
+    get ultra_hd_path
+    assert_response :success
+    assert_select "title", "Ultra HD | #{@base_title}"
+  end
+  
+  test "should get how 4k" do
+    get how_4k_path
+    assert_response :success
+    assert_select "title", "How to get a 4K picture? | #{@base_title}"
+  end
+  
+  test "should get where 4k" do
+    get where_4k_path
+    assert_response :success
+    assert_select "title", "Where to get 4K | #{@base_title}"
+  end
+  
 end

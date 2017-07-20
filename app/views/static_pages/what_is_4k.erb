@@ -3,18 +3,21 @@
 <h2>What is 4K?</h2>
 
 <p>
-    You must understand what 480, 720, and 1080 is because 4K is basically 2160.
+    You must understand what 480p, 480i, 720p, 1080i, and 1080p is because 4K is basically 2160p.
   
-  A TV/device that is in 480 can output output video at a horizontal resolution of 480 lines. 
-  This means the TV can output 480 lines of scan resolution, so obviously the more you have the better
-  picture you will get.  Older CRT TV's and a picture considered standard definition is normally 480P/i or lower, and it
-  normally has an aspect ratio of 4:3(square picture just like the older TV's).  The number such as 480 refers to the number
-  of pixels, so a tv with 480 pixels can have around 640(width) x 480(length) pixels on a screen with an aspect
-  ratio of 4:3((480/3) * 4, (480/3) * 3), but a newer TV which is wider and has an aspect ratio of 16:9, it can have around 
-  854 X 480 pixels in the screen resolution.
+  Devices that can output video in 480 or content that is recorded in 480 has 480 horizontal scan lines of resolution. 
+  The difference between 480p and 480i has to do with <%= link_to "Interlaced(i) vs Progressive(p)", i_vs_p_path %>
+  scanning. Generally Progressive scanning will produce a better picture and is recommended over Interlaced scanning.
+  The numbers 480, 720, and 1080 are referring to the scan lines of resolution, this generally means the higher the 
+  number the higher the resolution.  Older CRT TV's and a picture considered standard definition is normally 480P/i or
+  lower, and it normally has an aspect ratio of 4:3(square picture just like the older TV's). A TV(480P) can have 
+  640(width) x 480(length) pixels on a screen with an aspect ratio of 4:3((480/3) * 4, (480/3) * 3), but a TV(480p) with
+  an aspect ratio of 16:9, can have around 854 X 480 pixels in screen resolution. A TV(480i) has the same amount of pixels
+  as 480p, but it uses Interlaced scanning and the picture is not the same. Look at this <%= link_to "pixel chart",
+  pixel_chart_path %> for a complete breakdown in pixel difference between the different display resolutions.
   
-  Now we can talk about 720, 1080 and 2160(4K).  The newer TV's are wider and have an aspect ratio of 16x9, which means the
-  amount of pixels a TV outputs in 720 would be ((720/9)*16, (720/9) * 9), which = 1280 x 720, and a TV/device that ouputs
-  resolution at 1080, would have 1920 x 1080 pixels, and a TV/device that can output video at 4K(2160) would have 
-  3840 x 2160 pixels.
-   </p>
+  Now we can talk about 720p, 1080p and 2160p(4K).  The newer TV's are wider and have an aspect ratio of 16:9, which means
+  the amount of pixels a TV outputs in 720 would be ((720/9)*16, (720/9) * 9), which = 1280 x 720, and a TV/device that
+  ouputs resolution at 1080p, would have 1920 x 1080 pixels, and a TV/device that can output video at 4K(2160) would have 
+  3840 x 2160 pixels. 
+</p>
