@@ -1,13 +1,30 @@
-<header class="navbar navbar-top navbbar-inverse">
-      <div class="container">
+<header class="navbar navbar-top">
+      <div class="container" id="headcolor">
         <nav>
-          <ul class="nav navbar-nav navbar-right">
+          <ul>
+           
+            <li class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" id= "dropdownmenu" data-toggle="dropdown">Shortcuts
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelled-by="dropdownmenu">
+                <li><%= link_to "CLOSE", root_path %></li>
+                <li><%= link_to "How to get 4K?", how_4k_path %></li>
+                <li><%= link_to "What is 4K?", what_is_4k_path %></li>
+                <li><%= link_to "Where to get 4K", where_4k_path %></li>
+                <li><%= link_to "What is HDR?", hdr_path %></li>
+                <li><%= link_to "What is Ultra HD Premium?", ultra_hd_path %></li>
+                <li><%= link_to "Bit rate", bit_rate_path %></li>
+                <li><%= link_to "File size", file_size_path %></li>
+                <li><%= link_to "Interlaced vs Progressive", i_vs_p_path %></li>
+                <li><%= link_to "Pixel chart", pixel_chart_path %></li>
+                <li><%= link_to "Shortcuts", shortcuts_path %></li>
+                <li><%= link_to "Contact", contact_path %></li>
+              </ul>
+            </li>
             <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "About", about_path %></li>
-            <li><%= link_to "Contact", contact_path %></li>
-            <li><%= link_to "Shortcuts", shortcuts_path %></li>
           </ul>
         </nav>
-        </div>
+       </div>
     </header>
     
