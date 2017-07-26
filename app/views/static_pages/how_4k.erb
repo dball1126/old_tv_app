@@ -1,0 +1,24 @@
+<%= provide(:title, "How to get a 4K picture?") %>
+
+<h1>How to get a 4K picture?</h1>
+
+<p>
+  Just because you bought your 4K TV doesn't mean your watching 4K, have you noticed that the picture in the store was much
+  better then the picture you are currently getting?  There are many factors to consider in order to make sure you are
+  getting a 4K picture.  Most cable/satellite providers do not output their channels in 4K and if they have a channel in 4K
+  it may only be one channel or two at the most.  Currently Amazon Prime only has a handful of movies in 4K, Netflix actually
+  has around 100 titles in 4K although most of them are Netflix originals, and many other websites/apps that offer streaming
+  services may not offer 4K at all.  You can also try to download a 4K movie, but just because it says 4K does not mean it 
+  is truly 4K.  One way to tell if your downloaded movie is truly 4K is to look at the size of the file.  Standard definition,
+  high definition, and 4K definition movies can vary from title to title depending on the bit rate that your device records in.
+  The higher the bit rate the content records in will equate to better 
+  quality video and will result in a larger size file(<%= link_to "Click here for 4K File Size Information", file_size_path %>).  However, you can only send as
+  many bits as the frame rate(FPS) of your device, or refresh rate(30hz, 60hz, 120hz) of your display.  Frame rate is the amount
+  of frames your device is able to send per second, refresh rate is the amount of times your display can refresh the picture,
+  and bit rate is the amount of data(bits) your device is able to send to your display.
+  
+  The device that is outputting the content on the display is equally as important as the FPS, bit rate, and refresh rate.  If
+  your cable box is sending content in standard definition, then your display will only be able to output that content in 
+  standard definition.  If you stream a 4K video from a website then you need to make sure that your internet package has a minimum of 25GB of download speed to prevent buffering.
+  <%= link_to "Click here for more info on bit rate, frame rate, and refresh rate", bit_rate_path %>
+</p>

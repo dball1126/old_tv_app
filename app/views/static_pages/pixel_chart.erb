@@ -1,0 +1,14 @@
+<% provide(:title, "Pixel chart") %>
+
+<h1>Pixel Chart</h1>
+
+<p>
+  <%= link_to image_tag("Pixelchart.jpg") %>
+ </p>
+ <p>
+  The numbers speak for themselves, but look at the difference between 480i and 480p.  Calculating the pixels for 480i is
+  broken down into two different scans(fields), hence the reason why the pixels are added together.  This is strictly because
+  of <%= link_to "Interlacing", i_vs_p_path %>.  Basically two fields of Interlacing equals one frame, and one frame of 
+  Progressive scanning equals one frame. Progressive scanning calculates the pixels in a single frame, but Interlacing uses 
+  the term fields since it uses two scans to calculate one frame.
+</p>

@@ -1,0 +1,22 @@
+<%= provide(:title, "Interlaced vs Progressive") %>
+
+<h1>Interlaced vs Progressive</h1>
+<p>
+Interlaced(i) and Progressive(p) scanning is a way to store, display, and transmit video.  This is done
+by vertically scanning the video content line by line, but Interlaced scanning scans every other line
+where Progressive scanning scans every single line. For example, 
+
+Progressive scanning will scan lines: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Interlaced scanning will scan lines:  [1, 3, 5, 7, 9] + [2, 4, 6, 8, 10]
+
+Notice that Interlaced scanning creates the first scan using only the odd lines and then a second scan
+using the even lines.  An Interlaced video will add these two scans(fields) together but a video that uses
+Progressive scanning will create one scan(frame). This is essentially the reason why Progressive scanning is 
+able to produce video content that is smoother, more realistic, and a better picture. Interlacing was much 
+more common in the past because it offered the abliity to produce a great picture at a lower frame
+rate which is beneificial for the companies or people working with this content since the size of the content
+tends to be much smaller. Times have changed, now we have TV's with higher resolution, better ways to store 
+content, faster Internet speeds, higher resolution cameras, and more advanced equipment. Higher resolution 
+video content tends to use Progressive scanning, which means almost all video content in the modern era uses 
+Progressive scanning over Interlaced scanning.
+</p>
